@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Transformation</title>
+    <style>
+        body {
+          display: flex;
+          background-color: #1B1E37;
+          flex-direction: column;
+          height: 100vh; /* Full viewport height */
+          margin: 0; /* Remove default margin */
+          align-items: center; /* Center vertically */
+        }
+         
+        .button-container {
+            position: relative;
+            top: 10px;
+            display: flex;
+            justify-content: center;
+            align: center;
+            justify-content: space-between;
+            width: calc(250px + 25px);
+            arrange: center;
+          /* Width of 3 sets of buttons plus 2 spaces */
+        }
+
+        .button-pair {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .button {
+            width: 40px;
+            height: 40px;
+            padding: 0;
+            border: none;
+            background: none;
+            margin-bottom: 25px;
+            align-items: center;
+          
+          /* Space between each pair */
+        }
+        .button img {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <div class="button-pair">
+            <button id="buttonA" class="button">
+                <img src="A.jpeg" alt="A" />
+            </button>
+            <button id="buttonAa" class="button" style="display: none;">
+                <img src="Aa.jpeg" alt="Aa" />
+            </button>
+        </div>
+
+        <div class="button-pair">
+            <button id="buttonB" class="button">
+                <img src="B.jpeg" alt="B" />
+            </button>
+            <button id="buttonBb" class="button" style="display: none;">
+                <img src="Bb.jpeg" alt="Bb" />
+            </button>
+        </div>
+
+        <div class="button-pair">
+            <button id="buttonC" class="button">
+                <img src="C.jpeg" alt="C" />
+            </button>
+            <button id="buttonCc" class="button" style="display: none;">
+                <img src="Cc.jpeg" alt="Cc" />
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
